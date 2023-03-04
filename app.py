@@ -4,7 +4,7 @@ from wtforms import StringField, SubmitField, PasswordField
 from wtforms.validators import DataRequired
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "#lazurowy_pejzaż"
+app.config['SECRET_KEY'] = "supersecret"
 
 
 class LoginForm(FlaskForm):
