@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, flash
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField
 from wtforms.validators import DataRequired
@@ -40,5 +40,6 @@ def profile():
         password = form.password.data
         form.login.data = ''
         form.password.data = ''
+        flash(f"Welcome back {login}!")
     
     return render_template('profile.html', title=title, login=login, password=password, form=form)
