@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div id="profile_box">
+    {% if login and password %}
+        <h1>Login is {{ login }}</h1>
+        <h1>Password is {{ password }}</h1>
+    {% else %}
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <h1>Log in to your profile</h1>
+            {{ form.login(class="_not_button", placeholder="Login lub E-mail") }}
+            {{ form.password(class="_not_button", placeholder="Password")}}
+            {{ form.submit_to(value="Zaloguj", id="log_in")}}
+        </form>
+    {% endif %}
+</div>
+{% endblock %}}
