@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div id="profile_login">
+        <form method="POST" autocomplete="off" id="_register">
+            {{ form.hidden_tag() }}
+            <h1>Account Registration</h1>
+            {{ form.login_reg(class="_not_button", placeholder="Login") }}
+            {{ form.password_reg(class="_not_button", placeholder="Password")}}
+            {{ form.email_reg(class="_not_button", placeholder="E-Mail")}}
+            {{ form.submit_to_reg(class="_button", value="Register", id="log_in")}}
+        </form>
+    </div>
+{% endblock %}}

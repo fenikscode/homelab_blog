@@ -12,6 +12,20 @@
     margin: 0;
     padding: 0;
 }
+#profile_login a
+{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    color: #7C6A0A;
+    text-decoration: none;
+    text-shadow:
+        1px 1px 0px rgba(82, 82, 82, 0.3),
+        2px 2px 0px rgba(128, 128, 128, 0.3);
+}
 #profile_box
 {
     display: flex;
@@ -26,6 +40,11 @@
     border-style: none dotted;
     border-width: 8px;
     border-color: #7C6A0A;
+}
+#_register
+{
+    width: 45%;
+    height: 490px;
 }
 form
 {
@@ -73,6 +92,29 @@ form h1
     border-width: 5px;
     border-color: #7C6A0A;
 }
+._button
+{
+    position: relative;
+    width: 200px;
+    height: 45px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #7C6A0A;
+    text-align: center;
+    background-color: #ffffff00;
+    text-shadow:
+        1px 1px 0px rgba(82, 82, 82, 0.3),
+        2px 2px 0px rgba(128, 128, 128, 0.3);
+    border-style: none none dotted none;
+    border-width: 6px;
+    border-color: #ffffff00;
+    transition: 0.5s;
+}
+._button:hover
+{
+    border-color: #7C6A0A;
+    transform: scale(1.15);
+}
 input[type=button]
 {
     position: relative;
@@ -85,15 +127,15 @@ input::placeholder
 {
     font-weight: bold;
 }
-input[type=text]:focus::placeholder, input[type=password]:focus::placeholder
+input[type=text]:focus::placeholder, input[type=password]:focus::placeholder, input[type=email]:focus::placeholder
 {
     visibility: hidden;
 }
-input[type=text]:focus, input[type=password]:focus
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus
 {
     outline: none;
 }
-input[type=text]:focus-visible, input[type=password]:focus-visible
+input[type=text]:focus-visible, input[type=password]:focus-visible, input[type=email]:focus-visible
 {
     outline: none;
 }

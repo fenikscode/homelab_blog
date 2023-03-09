@@ -11,12 +11,13 @@
         </div>
     {% else %} 
         <div id="profile_login">
-            <form method="POST">
+            <form method="POST" autocomplete="off">
                 {{ form.hidden_tag() }}
                 <h1>Log in to your profile</h1>
-                {{ form.login(class="_not_button", placeholder="Login lub E-mail") }}
+                {{ form.login(class="_not_button", placeholder="Login") }}
                 {{ form.password(class="_not_button", placeholder="Password")}}
-                {{ form.submit_to(value="Zaloguj", id="log_in")}}
+                {{ form.submit_to(class="_button", value="Proceed", id="log_in")}}
+                <a href="{{ url_for('register') }}">&#62;No Account?</a>
             </form>
         </div>
     {% endif %}

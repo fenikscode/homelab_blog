@@ -12,7 +12,7 @@ nav
 {
     display: flex;
     position: relative;
-    justify-content: center;
+    gap: 80px;
     height: 45px;
     margin: 0 auto 0 auto;
     padding: 10px;
@@ -33,7 +33,6 @@ nav a
     font-size: 20px;
     font-weight: bold;
     padding: 5px;
-    margin: 0 50px 0 50px;
     text-shadow:
         1px 1px 0px rgba(82, 82, 82, 0.5),
         2px 2px 0px rgba(128, 128, 128, 0.5);
@@ -64,6 +63,7 @@ nav a:hover::after
 #title
 {
     font-size: 25px;
+    margin-left: 60px;
 }
 footer
 {

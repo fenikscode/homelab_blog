@@ -8,11 +8,11 @@
 </head>
     <body>
         <nav>
-            <a href="{{ url_for('index' ) }}" id="title">{{ title }}</a>
-            <a href="{{ url_for('news' ) }}">Aktualności</a>
-            <a href="{{ url_for('about' ) }}">Informacje</a>
-            <a href="{{ url_for('projects' ) }}">Projekty</a>
-            <a href="{{ url_for('profile' ) }}">Profile</a>
+            <a href="{{ url_for('index') }}" id="title">{{ title }}</a>
+            <a href="{{ url_for('news') }}">News</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('profile') }}">Profile</a>
         </nav>
 
         {% block content %}
@@ -20,7 +20,7 @@
         {% endblock %}
 
         <footer>
-            <h2>Strona Homelab Hub &copy; jest własnościom firmy Pizone. Wszelkie prawa zastrzeżone</h2>
+            <h2>Website Homelab Hub &copy; is owned by Pizone. All rights reserved!</h2>
         </footer>
 
     </body>

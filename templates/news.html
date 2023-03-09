@@ -2,4 +2,7 @@
 
 {% block content %}
     <h1>News page!</h1>
+    {% for users in user_list %}
+        <h2>{{ users.login }} - {{ users.e_mail }}</h2>
+    {% endfor %}
 {% endblock %}}
